@@ -1,0 +1,85 @@
+/*
+Theme Name:     Bellevue - Child Theme
+Theme URI:      http://themovation.com
+Template:       bellevuex
+Author:         Themovation
+Author URI:     http://themovation.com
+Version:        4.0
+Text Domain:    bellevue
+Domain Path:    /languages/
+*/
+
+
+/* = Theme customization starts here
+-------------------------------------------------------------- */
+
+/* When Taking Screenshots
+#wpadminbar, #scrollUp, #beacon-container, .headhesive--clone, #thhf-masthead-sticky, #container-floating {
+	display: none !important;
+}
+html.mediaqueries {
+    margin-top: 0px !important;
+}
+body.admin-bar .headhesive--stick, body.admin-bar .banner[data-transparent-header="true"] {
+    top: 0px  !important;
+}*/
+
+
+
+.elementor-widget-themo-accommodation-listing .elementor-row .thmv-icons.thmv-grid-facility li {
+    padding-right: 24px !important;
+	/*margin-top: 20px;*/
+}
+
+#main-flex-slider .slides .slider-title {
+   color: var(--e-global-color-thmv_light );
+}
+
+h4.mphb-services-details-title {
+    margin-top: 2em;
+}
+
+.mphb-room-details{
+	border-top:none;
+	margin-top:1em;
+	padding-top: 1em;
+}
+
+h3.mphb-room-number, p.mphb-room-type-title{
+    display: none;
+}
+
+select.mphb_sc_checkout-service-adults {
+    margin-top: 20px;
+}
+
+.elementor-widget-themo-accommodation-listing .elementor-row .thmv-info p.mphb-rooms-reservation-message {
+	color: var( --e-global-color-thmv_dark );
+	margin: 1em 0.5em 1em 0;
+}
+
+.mphb_sc_booking_form-wrapper .mphb-reserve-room-section p {
+    
+}
+
+.mphb-reserve-room-section.frm_submit, .mphb_sc_checkout-submit-wrapper.frm_submit, .mphb-reserve-btn-wrapper.frm_submit, .mphb_sc_search-submit-button-wrapper.frm_submit{
+	font-weight:bold;
+}
+
+
+/* Fix - Datepicker overlap with top header. */
+.datepick-popup {
+    z-index: 10001;
+}
+
+
+/* Calendar Zoom on mobile */
+@media screen and (max-width: 767px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+a.mphb-remove-from-reservation {
+    display: none;
+}
